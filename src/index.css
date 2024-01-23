@@ -169,7 +169,7 @@ NEXT
   @apply flex flex-col sm:flex-row;
 }
 .busOne {
-  @apply basis-1/2;
+  @apply basis-1/2 md:basis-3/5;
 }
 .busOneOne {
   @apply text-[48px] sm:text-[30px] md:text-[48px] leading-[150%] font-semibold inline-flex;
@@ -182,7 +182,7 @@ NEXT
 .features-container {
   @apply flex flex-col justify-center;
   /* @apply bg-slate-500; */
-  @apply basis-1/2;
+  @apply basis-1/2 md:basis-2/5;
 }
 
 .features {
