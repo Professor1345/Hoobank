@@ -8,7 +8,7 @@ const Business = () => {
     <section id="features" className="paddingY marginX business">
       <div className="busOne">
         <h2 className="busOneOne">
-          You do the business, <br className="hidden sm:block" /> we’ll handle
+          You do the business, <br className="hidden md:hidden" /> we’ll handle
           the money.
         </h2>
         <div className="busOneTwo">

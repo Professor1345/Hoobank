@@ -1,7 +1,14 @@
 // import React from 'react'
 
+import FeedBackCard from "./FeedBackCard";
+
 const FeedBack = () => {
-  return <div className="paddingY marginX">FeedBack</div>;
+  return (
+    <section id="clients" className="section paddingY marginX">
+      FeedBack
+      <FeedBackCard />
+    </section>
+  );
 };
 
 export default FeedBack;

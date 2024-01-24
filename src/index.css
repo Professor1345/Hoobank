@@ -170,26 +170,29 @@ NEXT
 }
 .busOne {
   @apply basis-1/2 md:basis-3/5;
+  @apply flex flex-col justify-center;
 }
 .busOneOne {
-  @apply text-[48px] sm:text-[30px] md:text-[48px] leading-[150%] font-semibold inline-flex;
+  @apply text-[48px] sm:text-[40px] md:text-[48px] leading-[150%] font-semibold inline-flex;
+  @apply max-w-[580px]
 }
 
 .busOneTwo {
   @apply text-[18px] leading-[170%] text-[rgba(255,255,255,0.70)];
-  @apply mt-5 mb-10 max-w-[470px];
+  @apply mt-5 mb-10 w-full sm:max-w-[470px];
 }
 .features-container {
   @apply flex flex-col justify-center;
   /* @apply bg-slate-500; */
   @apply basis-1/2 md:basis-2/5;
+  @apply mt-10 sm:mt-0 ml-0 sm:ml-10;
 }
 
 .features {
   @apply flex flex-row items-center;
   @apply feature-card;
   @apply rounded-2xl;
-  @apply p-6;
+  @apply py-6;
   /* @apply ; */
 }
 
@@ -219,6 +222,76 @@ NEXT
 .featuresTwo > div:nth-child(2) {
   @apply text-base;
 }
+
+/*
+///////////////
+ BILLING
+ //////////////
+ */
+
+ .billing {
+  @apply flex flex-col sm:flex-row-reverse;
+}
+.bilOne {
+  @apply basis-1/2 md:basis-2/5;
+  @apply justify-center items-start xl:items-center flex-1 flex flex-col;
+}
+.bilOneOne {
+  @apply text-[48px] sm:text-[40px] md:text-[48px] leading-[150%] font-semibold inline-flex;
+  @apply max-w-[470px];
+}
+
+.bilOneTwo {
+  @apply text-[18px] leading-[170%] text-[rgba(255,255,255,0.70)];
+  @apply mt-5 mb-10 w-full sm:max-w-[470px];
+}
+
+.bilLink{
+  @apply flex flex-row ;
+}
+
+/* .bilLink img{
+  @apply mx-2;
+} */
+
+.bilTwo {
+  @apply flex flex-col justify-center;
+  /* @apply bg-slate-500; */
+  @apply basis-1/2 md:basis-3/5;
+  @apply flex-1 mr-0 sm:mr-10 mt-10 sm:mt-0;
+}
+
+/*
+///////////////
+ CardDeal
+ //////////////
+ */
+.cardDeal {
+  @apply flex flex-col sm:flex-row;
+}
+.cardOne {
+  @apply basis-1/2 md:basis-1/2;
+  @apply flex flex-col justify-center;
+}
+.cardOneHeader {
+  @apply text-[48px] sm:text-[40px] md:text-[48px] leading-[150%] font-semibold inline-flex;
+  @apply max-w-[570px];
+}
+
+.cardOneContent {
+  @apply text-[18px] leading-[170%] text-[rgba(255,255,255,0.70)];
+  @apply mt-5 mb-10 w-full sm:max-w-[470px];
+}
+
+.cardTwo {
+  @apply flex flex-col justify-center;
+  /* @apply bg-slate-500; */
+  @apply basis-1/2 md:basis-1/2;
+  @apply flex-1 ml-0 sm:ml-10 mt-10 sm:mt-0;
+}
+
+
+
 /* Default */
 
 :root {
