@@ -1,7 +1,15 @@
 // import React from 'react'
 
-const Clients = () => {
-  return <div className="paddingY marginX">Clients</div>;
-};
+import { clients } from "../constants";
+
+const Clients = () => (
+  <section className="paddingClientY marginX clients">
+    {clients.map((client) => (
+      <div key={client.id} className="client-container">
+        <img src={client.logo} alt="client" className="object-contain size-full" />
+      </div>
+    ))}
+  </section>
+);
 
 export default Clients;

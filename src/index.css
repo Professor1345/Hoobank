@@ -174,7 +174,7 @@ NEXT
 }
 .busOneOne {
   @apply text-[48px] sm:text-[40px] md:text-[48px] leading-[150%] font-semibold inline-flex;
-  @apply max-w-[580px]
+  @apply max-w-[580px];
 }
 
 .busOneTwo {
@@ -208,7 +208,7 @@ NEXT
   @apply object-contain;
 }
 
-.featuresTwo{
+.featuresTwo {
   @apply flex flex-col flex-1;
   @apply ml-5;
 }
@@ -229,7 +229,7 @@ NEXT
  //////////////
  */
 
- .billing {
+.billing {
   @apply flex flex-col sm:flex-row-reverse;
 }
 .bilOne {
@@ -247,8 +247,8 @@ NEXT
   @apply mt-5 mb-10 w-full sm:max-w-[470px];
 }
 
-.bilLink{
-  @apply flex flex-row ;
+.bilLink {
+  @apply flex flex-row;
 }
 
 /* .bilLink img{
@@ -264,7 +264,7 @@ NEXT
 
 /*
 ///////////////
- CardDeal
+ CARDDEAL
  //////////////
  */
 .cardDeal {
@@ -291,8 +291,182 @@ NEXT
   @apply flex-1 ml-0 sm:ml-10 mt-10 sm:mt-0;
 }
 
+/*
+///////////////
+ FEEDBACK
+ //////////////
+ */
 
+/* .feedback {
+  
+} */
 
+.paddingFeedY {
+  @apply py-6 sm:pt-16 sm:pb-6;
+}
+
+.feedHeader {
+  @apply flex flex-1 flex-col sm:flex-row;
+  @apply justify-between items-center;
+  @apply mb-16 sm:mb-6;
+}
+
+.feedHeaderOne {
+  @apply text-[48px] sm:text-[40px] md:text-[48px] leading-[160%] font-semibold inline-flex;
+  @apply w-full sm:max-w-[470px];
+}
+
+/* FeedBackCard */
+.feedHeaderTwo {
+  @apply text-[18px] leading-[170%] text-[rgba(255,255,255,0.70)];
+  @apply w-full sm:max-w-[450px];
+  @apply rounded-2xl;
+  @apply mt-6 sm:mt-0;
+}
+
+.feedContent {
+  @apply flex flex-col sm:flex-row justify-between;
+  @apply items-center sm:items-start;
+}
+
+.fbc {
+  @apply flex flex-col justify-around;
+  @apply px-10 py-12 sm:px-6 sm:py-9 md:px-10 md:py-12;
+  @apply feedback-card;
+  @apply my-5 mr-0 sm:mr-5 md:mr-10;
+  @apply max-w-[370px] min-h-[395px] max-h-[400px];
+  @apply rounded-2xl;
+  @apply flex-1 sm:flex-auto md:flex-1;
+  /* @apply bg-blue-700; */
+}
+.fbc:last-child {
+  @apply mr-0;
+}
+.fbc-quote {
+  @apply w-[42px] h-[27px] object-contain;
+}
+
+.fbc-content {
+  @apply leading-[32px] my-7;
+  @apply text-[18px] sm:text-[16px] md:text-[18px];
+}
+
+.fbc-client {
+  @apply flex flex-row items-center;
+}
+
+.fbc-nt {
+  @apply flex flex-1 flex-col ml-4;
+}
+
+.fbc-nt div:nth-child(1) {
+  @apply text-base 2xs:text-xl sm:text-base md:text-xl;
+}
+
+.fbc-nt div:nth-child(2) {
+  @apply text-sm 2xs:text-base sm:text-sm md:text-base;
+}
+
+/*
+///////////////
+CLIENTS
+ //////////////
+ */
+
+.paddingClientY {
+  @apply py-5 sm:py-5;
+}
+
+.clients {
+  @apply flex flex-1 justify-around items-center;
+  @apply flex-wrap;
+}
+
+.client-container {
+  @apply w-[100px] sm:w-[140px] md:w-[192px] h-auto;
+  @apply mx-1;
+}
+
+/*
+///////////////
+SERVICE
+ //////////////
+ */
+.service {
+  @apply flex flex-col sm:flex-row items-center justify-between;
+  @apply bg-black-gradient-2 box-shadow rounded-2xl;
+  @apply px-6 sm:px-16 py-4 sm:py-14;
+}
+
+.serviceOne {
+  @apply flex-1;
+  /* @apply bg-blue-300; */
+}
+
+.serviceOneHeader {
+  @apply text-[48px] sm:text-[40px] md:text-[48px] leading-[150%] font-semibold;
+  @apply max-w-[670px];
+}
+
+.serviceOneContent {
+  @apply text-[18px] leading-[170%] text-[rgba(255,255,255,0.70)];
+  @apply mt-5 w-full sm:max-w-[470px];
+}
+
+.serviceTwo {
+  @apply ml-0 sm:ml-10 mt-10 sm:mt-0;
+  /* @apply flex-1; */
+  /* @apply m-auto; */
+  /* @apply bg-yellow-200; */
+}
+
+/*
+///////////////
+ FOOTER
+ //////////////
+ */
+.paddingFooterY {
+  @apply pt-6 sm:pt-16;
+}
+.paddingFooterX {
+  @apply px-6 sm:px-16 lg:px-20 xl:px-32;
+}
+.footer {
+  /* @apply bg-[rgba(11,10,12,0.60)]; */
+  /* @apply bg-blue-700; */
+}
+.footerOne {
+  @apply flex flex-col sm:flex-row;
+  @apply mb-8 w-full;
+}
+.footerOneOne {
+  @apply flex flex-col flex-1 justify-start mr-10;
+}
+.footerOneOneImg {
+  @apply w-[266px] h-[72px];
+}
+.footerOneOneContent {
+  @apply text-lg text-[rgba(255,255,255,0.70)];
+  @apply max-w-[312px];
+  @apply m-4;
+}
+
+.footerOneTwo {
+  /* flex-[1.5] */
+  @apply flex flex-[1.5] flex-row flex-wrap justify-between;
+  @apply mt-5 sm:mt-0;
+}
+.footerOneTwoContainer {
+  @apply flex flex-col;
+  @apply my-4 ss:my-0;
+  @apply min-w-[150px];
+}
+
+.footerTwo{
+  @apply flex flex-col sm:flex-row;
+  @apply justify-between;
+  @apply py-6;
+}
 /* Default */
 
 :root {
