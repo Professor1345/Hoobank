@@ -234,7 +234,8 @@ NEXT
 }
 .bilOne {
   @apply basis-1/2 md:basis-2/5;
-  @apply justify-center items-start xl:items-center flex-1 flex flex-col;
+  @apply justify-center flex-1 xl:flex-[0_0_43%] flex flex-col;
+  @apply ml-0 xl:ml-10;
 }
 .bilOneOne {
   @apply text-[48px] sm:text-[40px] md:text-[48px] leading-[150%] font-semibold inline-flex;
