@@ -22,7 +22,7 @@ const Business = () => {
       </div>
       <div className="features-container">
         {features.map((feature, index) => (
-          <div key={feature.id} className={`features ${index !== features.length - 1? "my-2" : "my-0"}`}>
+          <div key={feature.id} className={`features ${index !== features.length - 1? "my-2" : "my-2"}`}>
             <div className={`featuresOne`}>
               <img src={feature.icon} alt="icon" />
             </div>

@@ -41,12 +41,12 @@ const Footer = () => {
       </div>
       <hr className="bg-[#3F3E45]" />
       <div className="footerTwo">
-        <div className="flex flex-wrap text-base sm:text-lg">
+        <div className="flex flex-wrap text-sm 2xs:text-base sm:text-lg justify-center sm:justify-normal">
           <div>Copyright</div>
           <div className="mx-2">
             <img src={copyright} className="w-full h-full" alt="copyright" />
           </div>
-          <div className="mt-1 sm:mt-0">2024 HooBank. All Rights Reserved.</div>
+          <div className="mt-1 sm:mt-0">{new Date().getFullYear()} HooBank. All Rights Reserved.</div>
         </div>
         <div className="flex flex-wrap mx-0 sm:mx-3 my-3 sm:my-0">
           {socialMedia.map((social) => (
