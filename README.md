@@ -1,4 +1,3 @@
-````markdown
 # HooBank Page with Vite
 
 This HooBank project is a landing page template designed to showcase various sections like Navbar, Next, Stats, Business, Billing, CardDeal, FeedBack, Clients, Service, and Footer. The project utilizes Tailwind CSS for styling and Vite for fast and efficient development.
@@ -19,7 +18,7 @@ This HooBank project is a landing page template designed to showcase various sec
    ```bash
    git clone https://github.com/Professor1345/Hoobank.git
    ```
-````
+
 
 2. Install dependencies:
 
